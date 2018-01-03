@@ -9,7 +9,8 @@
   text-align: left;
 }
 // Show More and Show Less buttons for the text field
-.show-more-state { padding-left: 0;
+.show-more-state {
+  padding-left: 0;
   &:before { margin-right: 2px; }
 }
 .show-less {
@@ -47,7 +48,8 @@ pre { margin: 0; }
   padding-left: 0;
   overflow: hidden;
   .view-switch-btn { margin-bottom: 10px; }
-  .detail-text { padding-left: 0;
+  .detail-text {
+    padding-left: 0;
     .text-switcher {
       position: fixed;
       right: 20px;
@@ -107,9 +109,9 @@ pre { margin: 0; }
           background-clip: content-box;
           .edit-icon {
             position: absolute;
-            right: 28px;
-            top: 1px;
             display: block;
+            top: 1px;
+            right: 28px;
             cursor: pointer;
           }
         }
@@ -119,7 +121,7 @@ pre { margin: 0; }
 }
 .detail-text-action { margin-top: 10px; }
 .text-editable {
-  padding-right: 30px !important;
-  background-clip: content-box !important;
-  .Border(1px, solid, @color-pf-blue-400)!important;
+  padding-right: 30px;
+  background-clip: content-box;
+  .Border(1px, solid, @color-pf-blue-400);
 }

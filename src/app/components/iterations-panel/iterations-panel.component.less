@@ -24,35 +24,6 @@
       border-bottom: none;
       tree-viewport {
         overflow: visible;
-        .node-drop-slot,
-        .list-group-item {
-          padding: 0 !important;
-          margin:  0 !important;
-          background-color: @color-pf-black-900;
-          &:hover {
-            background-color: @color-pf-black-700;
-          }
-          .tree-list-item {
-            display: inline-block;
-            width: 100%;
-            padding: 0 !important;
-            background-color: @color-pf-black-900;
-            &:hover {
-              background-color: @color-pf-black-700;
-            }
-            span {
-              float: left;
-            }
-            .toggle-children-wrapper {
-              width: 25px;
-              padding-top: 5px;
-              padding-left: 30px;
-            }
-          }
-          .on-hover-background {
-            background-color: @color-pf-black-700;
-          }
-        }
         .tree-children {
           padding-left: 0;
           overflow: visible;
@@ -76,7 +47,7 @@
             }
           }
           .list-pf-container {
-            padding: 0 15px !important;
+            padding: 0 15px;
             background-color: @color-pf-black-900;
             border-left: 4px solid;
             border-left-color: transparent;
@@ -95,7 +66,7 @@
                 .btn-link {
                   color: @color-pf-white;
                 }
-                .dropdown-menu{
+                .dropdown-menu {
                   background-color: @color-pf-white;
                   li a:hover {
                     background-color: @color-pf-blue-50;
@@ -201,8 +172,8 @@
     font-size: 12px;
     &:after,
     &:before {
-      background: transparent !important;
-      content: none !important;
+      background: transparent;
+      content: none;
     }
   }
   &__add {
@@ -217,12 +188,12 @@
   }
   //Patternfly-ng's tree styles overwrite
   .pfng-tree-list .toggle-children-wrapper-expanded .toggle-children:before {
-    content: "\F107";
+    content: '\F107';
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
   }
   .pfng-tree-list .toggle-children-wrapper-collapsed .toggle-children:before {
-    content: "\F105";
+    content: '\F105';
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
   }

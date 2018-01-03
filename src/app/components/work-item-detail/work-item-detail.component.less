@@ -62,7 +62,7 @@
 .wi-detail-title-blk {
   .detail-title {
     position: relative;
-    max-width: ~"calc(e('100% - 30px'))";
+    max-width: calc(e('100% - 30px'));
     padding-top: 1px;
     padding-bottom: 3px;
     padding-left: 5px;
@@ -75,13 +75,13 @@
     &:hover {
       .detail-title {
         .Border(1px, solid, @color-pf-blue-200);
-        transition: border ease-in-out 0.2s;
+        transition: border ease-in-out 200;
       }
     }
   }
   .detail-title-edit {
     float: left;
-    width: ~"calc(e('100% - 100px'))";
+    width: calc(e('100% - 100px'));
     height: 25px;
     padding-left: 5px;
     overflow: hidden;
@@ -91,7 +91,7 @@
     cursor: pointer;
     resize: none;
     .Border(1px, solid, @color-pf-blue-400);
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 300;
   }
   .title-error {
     position: absolute;
@@ -159,7 +159,8 @@
       border-style: solid;
     }
     .detail-assignee-name {
-      .placeholder { color: @color-pf-blue-400;
+      .placeholder {
+        color: @color-pf-blue-400;
         &:hover { cursor: pointer; }
       }
     }
@@ -210,7 +211,8 @@
   color: @color-pf-black-500;
   cursor: pointer;
 }
-.user-search { position: relative;
+.user-search {
+  position: relative;
   .list-container {
     position: absolute;
     z-index: 10;
