@@ -26,9 +26,9 @@
     }
   }
   &__detail {
-   // height: ~"calc(e('100vh - 200px'))";
+   // height: calc(e('100vh - 200px'));
     label {
-      text-align: left !important;
+      text-align: left;
     }
     &-wrap {
     height: 100%;
@@ -64,7 +64,8 @@
       border-style: solid;
     }
     .detail-assignee-name {
-      .placeholder { color: @color-pf-blue-400;
+      .placeholder {
+        color: @color-pf-blue-400;
         &:hover { cursor: pointer; }
       }
     }
@@ -75,7 +76,8 @@
   }
 }
 
-.user-search { position: relative;
+.user-search {
+  position: relative;
   .list-container {
     position: absolute;
     z-index: 10;
